@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dress Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Character -->
+  <div class="character">
+    <img src="images/base.png" class="layer">
+    <img id="top" class="layer">
+    <img id="bottom" class="layer">
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <h3>👕 Tops</h3>
+    <button onclick="changeTop('images/top1.png')">Top 1</button>
+    <button onclick="changeTop('images/top2.png')">Top 2</button>
+
+    <h3>👖 Bottoms</h3>
+    <button onclick="changeBottom('images/bottom1.png')">Bottom 1</button>
+    <button onclick="changeBottom('images/bottom2.png')">Bottom 2</button>
+
+    <h3>🔄 Reset</h3>
+    <button onclick="resetClothes()">Reset</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

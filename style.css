@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #ffeef5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App layout */
+.app {
+  text-align: center;
+}
+
+/* Character */
+.character {
+  position: relative;
+  width: 250px;
+  height: 470px;
+  margin: auto;
+}
+
+/* Layers (very important) */
+.layer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* Buttons */
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  background: hsl(331, 100%, 50%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c05186;
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* ترتیب لایه‌ها */
+.base {
+  z-index: 1;
+}
+
+#bottom {
+  z-index: 2;
+}
+
+#top {
+  z-index: 3;
+}
